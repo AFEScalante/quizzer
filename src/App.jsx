@@ -50,7 +50,7 @@ function App() {
           element={<QuestionBuilder onSubmit={handleSubmit} />}
         />
         <Route
-          path="/quiz-edit:quizId"
+          path="/quiz-edit/:quizId"
           element={
             <QuestionBuilder quizzes={quizzes} onSubmit={handleSubmit} />
           }

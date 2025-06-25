@@ -4,7 +4,7 @@ import QuizCard from "../components/QuizCard";
 export default function Home({ quizzes }) {
   return (
     <main className="m-auto max-w-xl p-4">
-      <p className="text-center text-gray-700 text-xl mb-4">
+      <p className="text-center text-gray-700 font-extrabold text-xl mb-4">
         What's your plan today?
       </p>
       <NewQuiz />

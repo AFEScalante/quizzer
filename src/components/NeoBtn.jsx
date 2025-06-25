@@ -14,7 +14,7 @@ export function NeoBtn({
       {...delegated}
     >
       <span
-        className={`${className} flex flex-col shadow-solid justify-center items-center gap-1 rounded-md border-2 border-black p-4 transition-all`}
+        className={`${className} flex flex-col shadow-solid justify-center items-center gap-1 rounded-md border-2 border-black p-2 transition-all`}
       >
         {children}
       </span>
