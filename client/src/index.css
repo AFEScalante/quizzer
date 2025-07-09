@@ -4,30 +4,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  color: var(--color-slate-700);
   background-color: var(--color-gray-100);
 }
 
 .shadow-solid-only {
-  box-shadow: 3x 3px 0 0 black;
+  box-shadow: 3x 3px 0 0 var(--color-slate-700);
   transition: all 0.2 ease;
 }
 
 .shadow-solid-only:hover {
-  box-shadow: 5px 5px 0 0 black;
+  box-shadow: 5px 5px 0 0 var(--color-slate-700);
   transform: translate(-2px, -2px);
 }
 
 .shadow-solid {
-  box-shadow: 3x 3px 0 0 black;
+  box-shadow: 3x 3px 0 0 var(--color-slate-700);
   transition: all 0.2 ease;
 }
 
 .shadow-solid:hover {
-  box-shadow: 5px 5px 0 0 black;
+  box-shadow: 5px 5px 0 0 var(--color-slate-700);
   transform: translate(-2px, -2px);
 }
 
 .shadow-solid:active {
   transform: translate(5px, 5px);
-  box-shadow: 0px 0px 0 0 black;
+  box-shadow: 0px 0px 0 0 var(--color-slate-700);
 }

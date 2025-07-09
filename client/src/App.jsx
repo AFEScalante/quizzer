@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import QuestionBuilder from "./pages/QuestionBuilder";
 import { useEffect, useState } from "react";
 import HostScreen from "./pages/HostScreen";
+import ParticipantScreen from "./pages/ParticipantScreen";
 
 function App() {
   const navigate = useNavigate();
@@ -55,10 +56,8 @@ function App() {
             <QuestionBuilder quizzes={quizzes} onSubmit={handleSubmit} />
           }
         />
-        <Route
-          path="/quiz-host/:quizId"
-          element={<HostScreen />} // Replace with actual HostScreen component
-        />
+        <Route path="/quiz-host/:quizId" element={<HostScreen />} />
+        <Route path="/session/:sessionId" element={<ParticipantScreen />} />
       </Routes>
     </>
   );

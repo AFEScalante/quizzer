@@ -13,14 +13,11 @@ export default function QuizCard({ quiz }) {
         </p>
       </div>
       <div className="flex items-center">
-        <Link
-          to={`/quiz-edit/${quiz.id}`}
-          className="text-xl hover:animate-bounce"
-        >
-          <LuPencilLine className="text-gray-900 mr-4" />
+        <Link to={`/quiz-edit/${quiz.id}`} className="text-xl">
+          <LuPencilLine className="text-gray-900 mr-4 hover:animate-pulse" />
         </Link>
-        <Link to={`/quiz-host/${quiz.id}`} className="hover:animate-bounce">
-          <FaArrowRight className="text-gray-900" />
+        <Link to={`/quiz-host/${quiz.id}`}>
+          <FaArrowRight className="text-gray-900 hover:animate-pulse" />
         </Link>
       </div>
     </div>
